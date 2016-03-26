@@ -1,0 +1,85 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='jamual')
+    title 🍕 - HotnReady
+    // Bootstrap Core CSS
+    link(href='stylesheets/bootstrap.min.css', rel='stylesheet')
+    // Custom CSS
+    
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body
+    // Navigation
+    nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+      .container
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') Brand here
+        // Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              a(href='/aboutus') About
+            li
+              a(href='/design') Designs
+            li
+              a(href='/contact') Contact
+        // /.navbar-collapse
+      // /.container
+    // Page Content
+    .container
+      .row
+        .col-lg-12.text-center
+          h1 HotnReady🍕 Node Template
+          p.lead Get your hands dirty and build!
+          h5 Node Express Jade Socketio Mongoose Nodemon
+          h6 Human-readable configuration 😬 
+          form(method="post" action="/create")
+            input(type="text", name="newsU", value=newsU,)
+            input(type="submit", value="save")
+      .row
+        block business
+      .row.text-center 
+        h3 Messages
+          - for Post in modelflow
+            p= Post.title
+          
+      .col-md-12
+          #footer.row
+            //a#footerFollow(href='/business') Business
+            a#footerFollow(href='/support') Help
+            a#footerFollow(href='/terms') Terms
+            a#footerFollow(href='/privacy') Privacy
+            //a#footerFollow(target='_blank', href='/jobs') Jobs
+            //a#footerFollow(target='_blank', href='/ads') Advertisement
+            //a#footerFollow(target='_blank', href='/developers') Devolopers
+            |  © 2016 HotnReady🍕
+          
+          
+      // /.row
+    // /.container
+    // jQuery Version 1.11.1
+    script(src='javascripts/jquery.js')
+    // Bootstrap Core JavaScript
+    script(src='javascripts/bootstrap.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
+    // Socket.io
+    script(src='/socket.io/socket.io.js')
+    script.
+      var socket = io.connect();
+      socket.on('connect', function(data) {
+      socket.emit('join', 'Your Homepage!');
+      });
