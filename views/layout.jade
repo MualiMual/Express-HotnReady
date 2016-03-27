@@ -50,15 +50,16 @@ html(lang='en')
           form(method="post" action="/create")
             input(type="text", name="newsU", value=newsU,)
             input(type="submit", value="save")
-          
-          h3 Messages
-          //- for Post in modelflow
-            p= Post.title
       
-      .row
+          h3 Messages
+          //- each Post in modelflow
+            p= Post.title
+            
+      .row.text-center
         block business
           
       .col-md-12
+          block business 
           #footer.row
             //a#footerFollow(href='/business') Business
             a#footerFollow(href='/support') Help
