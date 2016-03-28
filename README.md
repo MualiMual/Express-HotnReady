@@ -16,19 +16,19 @@ Wiki Here : https://github.com/NobleGestures/Express-HotnReady/wiki/HotnReady%F0
 //App Home  
         npm install
 
-//New Terminal: 
+//New Terminal 
         mongodb --smallfiles
     
-//New Terminal: 
+//New Terminal 
         mongo use mmdatabase
     
-//New Terminal: 
+//New Terminal 
         nodemon
 
-// launched app instance
+//launched app instance
     
 
-///////////////Resources 
+///////////////Helpful Commands
 
 
     //View database into mongo collections
