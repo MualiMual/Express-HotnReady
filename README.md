@@ -1,8 +1,8 @@
 # Welcome to a Hot n Ready🍕 Nodejs App
 
 This is a express server with a simple configuration. 
-The Recipe:
 
+The Recipe:
 Node Express Jade Socketio Mongoose Nodemon 
 
 Wiki Here : https://github.com/NobleGestures/Express-HotnReady/wiki/HotnReady%F0%9F%8D%95-Nodejs-App
