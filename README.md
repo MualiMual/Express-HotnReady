@@ -1,23 +1,31 @@
-Welcome to a Hot n Ready🍕 Nodejs App
+# Welcome to a Hot n Ready🍕 Nodejs App
 
 This is a express server with a simple configuration. 
+The Recipe:
 
+Node Express Jade Socketio Mongoose Nodemon 
+
+Wiki Here : https://github.com/NobleGestures/Express-HotnReady/wiki/HotnReady%F0%9F%8D%95-Nodejs-App
 Demo Here : 
+
 
 
 ///////////////5 easy steps to running your server via CLI with 4 terminals
 
-//App Home  
-    cd app
+//App Home:  
+        cd app
+        
+//App Home:  
+        npm install
 
-//New Terminal 
-    mongodb --smallfiles
+//New Terminal: 
+        mongodb --smallfiles
     
-//New Terminal 
-    mongo use mmdatabase
+//New Terminal: 
+        mongo use mmdatabase
     
-//New Terminal 
-    nodemon
+//New Terminal: 
+        nodemon
 
 // launched app instance
     click on the green run button or "right click app.js" then click "Run"
